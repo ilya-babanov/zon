@@ -1,0 +1,51 @@
+{
+  "verbose": true,
+  "maximumLineLength": 79,
+  "validateLineBreaks": "LF",
+
+  "disallowMixedSpacesAndTabs": true,
+  "disallowMultipleLineStrings": true,
+  "disallowMultipleSpaces": true,
+  "disallowOperatorBeforeLineBreak": ["+", "."],
+  "disallowNewlineBeforeBlockStatements": {
+    "value": ["function"],
+    "allExcept": ["multiLine"]
+  },
+  "disallowSpacesInFunction": {
+    "beforeOpeningRoundBrace": true,
+    "beforeOpeningCurlyBrace": true
+  },
+  "disallowSpacesInsideBrackets": {
+    "allExcept": ["{", "}"]
+  },
+  "disallowSpaceAfterPrefixUnaryOperators": true,
+  "disallowSpaceBeforePostfixUnaryOperators": true,
+  "disallowSpaceAfterObjectKeys": true,
+  "disallowSpaceBeforeSemicolon": true,
+  "disallowSpaceAfterPrefixUnaryOperators": true,
+  "disallowSpacesInCallExpression": true,
+  "disallowTabs": true,
+  "disallowTrailingWhitespace": true,
+
+  "requireSemicolons": true,
+  "requireAlignedMultilineParams": 0,
+  "requireCommaBeforeLineBreak": true,
+  "requireKeywordsOnNewLine": ["else", "switch", "case"],
+  "requireNewlineBeforeBlockStatements": ["if", "else", "for", "while"],
+  "requireObjectKeysOnNewLine": {
+    "allExcept": ["sameLine"]
+  },
+  "requireSpaceAfterComma": true,
+  "requireSpaceAfterKeywords": [
+    "do", "for", "if", "else", "switch", "case",
+    "try", "void", "while", "with", "return", "typeof"
+  ],
+  "requireSpaceBeforeObjectValues": true,
+  "requireSpaceBetweenArguments": true,
+
+  "safeContextKeyword": ["_this", "__this"],
+
+  "excludeFiles": [
+    "build/**/*.js"
+  ]
+}
