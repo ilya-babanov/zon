@@ -1,12 +1,13 @@
 {
   "verbose": true,
-  "maximumLineLength": 79,
-  "validateLineBreaks": "LF",
+  "esnext": true,
 
-  "disallowMixedSpacesAndTabs": true,
-  "disallowMultipleLineStrings": true,
-  "disallowMultipleSpaces": true,
-  "disallowOperatorBeforeLineBreak": ["+", "."],
+  "maximumLineLength": 79,
+  "validateIndentation": 4,
+  "validateLineBreaks": "LF",
+  "validateQuoteMarks": {"mark": "'", "escape": true},
+
+  "disallowOperatorBeforeLineBreak": ["."],
   "disallowNewlineBeforeBlockStatements": {
     "value": ["function"],
     "allExcept": ["multiLine"]
@@ -15,33 +16,55 @@
     "beforeOpeningRoundBrace": true,
     "beforeOpeningCurlyBrace": true
   },
-  "disallowSpacesInsideBrackets": {
-    "allExcept": ["{", "}"]
-  },
   "disallowSpaceAfterPrefixUnaryOperators": true,
   "disallowSpaceBeforePostfixUnaryOperators": true,
+  "disallowSpacesInCallExpression": true,
   "disallowSpaceAfterObjectKeys": true,
   "disallowSpaceBeforeSemicolon": true,
-  "disallowSpaceAfterPrefixUnaryOperators": true,
-  "disallowSpacesInCallExpression": true,
-  "disallowTabs": true,
   "disallowTrailingWhitespace": true,
+  "disallowMixedSpacesAndTabs": true,
+  "disallowMultipleLineStrings": true,
+  "disallowMultipleLineBreaks": true,
+  "disallowMultipleSpaces": true,
+  "disallowYodaConditions": true,
+  "disallowTabs": true,
 
-  "requireSemicolons": true,
-  "requireAlignedMultilineParams": 0,
-  "requireCommaBeforeLineBreak": true,
-  "requireKeywordsOnNewLine": ["else", "switch", "case"],
-  "requireNewlineBeforeBlockStatements": ["if", "else", "for", "while"],
+  "requireKeywordsOnNewLine": [
+    "else",
+    "switch",
+    "case"
+  ],
+  "requireNewlineBeforeBlockStatements": [
+    "if",
+    "else",
+    "for",
+    "while"
+  ],
+  "requireSpaceAfterKeywords": [
+    "do",
+    "for",
+    "if",
+    "else",
+    "switch",
+    "case",
+    "try",
+    "void",
+    "while",
+    "with",
+    "return",
+    "typeof"
+  ],
   "requireObjectKeysOnNewLine": {
     "allExcept": ["sameLine"]
   },
+  "requireTrailingComma": {"ignoreSingleLine": true},
+  "requireSemicolons": true,
+  "requireAlignedMultilineParams": true,
+  "requireCommaBeforeLineBreak": true,
   "requireSpaceAfterComma": true,
-  "requireSpaceAfterKeywords": [
-    "do", "for", "if", "else", "switch", "case",
-    "try", "void", "while", "with", "return", "typeof"
-  ],
   "requireSpaceBeforeObjectValues": true,
   "requireSpaceBetweenArguments": true,
+  "requireParenthesesAroundIIFE": true,
 
   "safeContextKeyword": ["_this", "__this"],
 

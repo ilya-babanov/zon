@@ -23,7 +23,8 @@ function long_arguments(aaaaaaa, bbbbbbbb,
     }
     else
         log(9);
-    aaaaaaa.forEach(a=>a.do());
+
+    aaaaaaa.forEach(a=>log());
     bbbbbbbb.map(c=>{
         log();
         long_arguments();
@@ -40,7 +41,7 @@ function foo(data){
     // signed 32 bit integer
     bar.t = bar.t|0;
     // unsigned 32 bit integer
-    bar.t = bar.t>>>9;
+    bar.t = bar.t>>>0;
     log(+bar.t); // number
     if (bar.t && bar.t>321)
         bar.t = 123;
@@ -56,11 +57,14 @@ var test = {
 var baz = {a: 123, b: 456};
 var t = function(){};
 
-if (test.b>333)
+if (test.b>333 || test.c<14)
 {
     log('test'+' b '+ ' is bigger');
     long_arguments();
     foo();
 }
+
+var a = 'aaa'
++ 'aaa';
 
 E.foo = foo;
